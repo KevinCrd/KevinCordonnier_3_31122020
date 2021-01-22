@@ -1,0 +1,48 @@
+.section1
+{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+
+    &__geoloc
+    {
+        @include displaycenter;
+        margin: 0 0 0 45px;
+    }
+    &__decrestaurant
+    {
+        @extend .section1__geoloc;
+        flex-direction: column;
+        @include padding15;
+        
+        h1
+        {
+            @extend .section1__geoloc;
+            @include textegras;
+            @include marge10;
+        }
+        h2
+        {
+            @extend .section1__geoloc;
+            @include marge10;
+            @include textenormal;
+        }
+        a
+        {
+            margin: 0 0 0 40px;
+        }
+    }
+
+}
+.section2
+{
+    @extend .section1;
+    article
+    {
+        @include imagepageprincipal;
+        img
+        {
+            @include dimensionimage;
+        }
+    }
+}

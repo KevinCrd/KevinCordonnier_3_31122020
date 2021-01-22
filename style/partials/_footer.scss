@@ -1,0 +1,15 @@
+footer ul
+{  
+    background-color: $black;
+    color: $white;
+    h1
+    {
+        @include textegras
+    }
+    a
+    {
+        text-decoration: none;
+        color: $white;
+    }
+
+}

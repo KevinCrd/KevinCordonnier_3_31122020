@@ -1,0 +1,10 @@
+header
+{
+    @include displaycenter;
+    img
+    {
+        width: 50%;
+        height: auto;
+        @include marge10;
+    }
+}

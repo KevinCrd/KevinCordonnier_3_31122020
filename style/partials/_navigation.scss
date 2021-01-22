@@ -1,0 +1,14 @@
+nav ul
+{
+    @include padding15;
+    h1
+    {
+        @include displayleft;
+        @include textegras;
+    }
+    li
+    {
+        @include displayleft;
+        @include marge10;
+    }
+}
