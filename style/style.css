@@ -1,3 +1,29 @@
+/* Bouton principale */
+.boutoncontour {
+  border-radius: 45px 45px 45px 45px;
+  padding: 3% 5% 3% 5%;
+  border: 1px solid #FF79DA;
+}
+
+.boutonstyle {
+  background-color: #FF79DA;
+  text-decoration: none;
+  color: white;
+}
+
+/* Listing */
+.listecontour {
+  border-radius: 25px 25px 25px 25px;
+  padding: 5% 5% 5% 5%;
+  border: 1px solid #FF79DA;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  overflow-x: hidden;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5,19 +31,19 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-bottom: 2px solid rgba(112, 111, 111, 0.74);
 }
 
 header img {
   width: 50%;
-  height: auto;
   margin: 10px 10px 10px 10px;
 }
 
-nav ul {
+nav ol {
   padding: 15px 15px 15px 15px;
 }
 
-nav ul h1 {
+nav ol h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +54,7 @@ nav ul h1 {
   font-weight: bold;
 }
 
-nav ul li {
+nav ol li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,6 +62,16 @@ nav ul li {
       -ms-flex-pack: left;
           justify-content: left;
   margin: 10px 10px 10px 10px;
+  background-color: rgba(239, 239, 239, 0.74);
+}
+
+nav ol li span {
+  margin-left: 15%;
+}
+
+nav ol li i {
+  font-size: 1em;
+  margin-left: 5%;
 }
 
 .section1, .section2 {
@@ -46,9 +82,6 @@ nav ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
 }
 
 .section1__geoloc, .section1__decrestaurant, .section1__decrestaurant h1, .section1__decrestaurant h2 {
@@ -58,7 +91,8 @@ nav ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 0 0 45px;
+  padding: 10px 0 10px 0;
+  background-color: rgba(214, 213, 213, 0.74);
 }
 
 .section1__decrestaurant {
@@ -67,22 +101,36 @@ nav ul li {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 15px 15px 15px 15px;
+  background-color: rgba(239, 239, 239, 0.74);
 }
 
 .section1__decrestaurant h1 {
   font-size: 1.5em;
   font-weight: bold;
-  margin: 10px 10px 10px 10px;
+  margin: 5px 5px 5px 5px;
+  text-align: center;
+  background-color: rgba(239, 239, 239, 0.74);
 }
 
 .section1__decrestaurant h2 {
-  margin: 10px 10px 10px 10px;
+  margin: 5px 5px 5px 5px;
   font-size: 1em;
   font-weight: normal;
+  text-align: center;
+  background-color: rgba(239, 239, 239, 0.74);
 }
 
 .section1__decrestaurant a {
-  margin: 0 0 0 40px;
+  margin: auto;
+}
+
+.section2 {
+  background-color: rgba(239, 239, 239, 0.74);
+  padding-bottom: 45px;
+}
+
+.section2 h1 {
+  padding: 15px 15px 15px 15px;
 }
 
 .section2 article {
@@ -91,13 +139,14 @@ nav ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 5px 5px 5px 5px;
+  padding: 2px;
   margin: 5px;
   border-radius: 15px 15px 15px 15px;
   -webkit-box-shadow: 4px 4px 4px #F2F2F2;
           box-shadow: 4px 4px 4px #F2F2F2;
-  max-width: 7%;
-  height: 10%;
+  width: 90%;
+  -ms-flex-direction: row;
+      flex-direction: row;
 }
 
 .section2 article img {
@@ -108,17 +157,58 @@ nav ul li {
      object-fit: cover;
 }
 
-footer ul {
+.section2 article a {
+  text-decoration: none;
+}
+
+.section2 article strong {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.section2 article p {
+  padding: 0 0 0 15px;
+  font-size: 1em;
+  font-weight: normal;
+  color: black;
+}
+
+.section2 article i {
+  position: relative;
+  float: right;
+  bottom: 45px;
+  right: 10px;
+  font-size: 1em;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.section2 article i:hover {
+  color: aqua;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: white;
+}
+
+footer {
   background-color: black;
   color: white;
+  width: 100%;
+  padding: 5px 0 5px 0;
 }
 
-footer ul h1 {
+footer ul li {
+  list-style-type: none;
+  margin-bottom: 3px;
+}
+
+footer h1 {
   font-size: 1.5em;
   font-weight: bold;
+  font-style: italic;
 }
 
-footer ul a {
+footer a {
   text-decoration: none;
   color: white;
 }

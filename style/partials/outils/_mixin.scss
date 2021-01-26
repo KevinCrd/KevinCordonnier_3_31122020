@@ -1,3 +1,7 @@
+@mixin marge5{
+    margin: 5px 5px 5px 5px;
+}
+
 @mixin marge10{
     margin: 10px 10px 10px 10px;
 }
@@ -24,12 +28,11 @@
 @mixin imagepageprincipal{
     background-color: white;
     flex-direction: column;
-    padding: 5px 5px 5px 5px;
+    padding: 2px;
     margin: 5px;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 4px 4px 4px #F2F2F2;
-    max-width: 7%;
-    height: 10%;
+    width: 90%;
 }
 @mixin dimensionimage{
     height: 200px;

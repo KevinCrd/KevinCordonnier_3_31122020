@@ -2,47 +2,94 @@
 {
     display: flex;
     flex-direction: column;
-    width: max-content;
 
     &__geoloc
     {
         @include displaycenter;
-        margin: 0 0 0 45px;
+        padding: 10px 0 10px 0;
+        background-color:$grisclair;
     }
     &__decrestaurant
     {
         @extend .section1__geoloc;
         flex-direction: column;
         @include padding15;
+        background-color: $grisclair2;
         
         h1
         {
             @extend .section1__geoloc;
             @include textegras;
-            @include marge10;
+            @include marge5;
+            text-align: center;
+            background-color: $grisclair2;
         }
         h2
         {
             @extend .section1__geoloc;
-            @include marge10;
+            @include marge5;
             @include textenormal;
+            text-align: center;
+            background-color: $grisclair2;
         }
         a
         {
-            margin: 0 0 0 40px;
+            margin: auto;
         }
     }
 
 }
 .section2
 {
-    @extend .section1;
+    @extend .section1; 
+    background-color: $grisclair2;
+    padding-bottom: 45px;
+        h1
+        {
+            @include padding15;
+        }
     article
     {
+        
         @include imagepageprincipal;
+        flex-direction: row;
+       
         img
         {
             @include dimensionimage;
         }
+        a
+        {
+            text-decoration: none;
+        }
+        strong
+        {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        p
+        {
+            padding: 0 0 0 15px;
+            @include textenormal;
+            color: black;
+        } 
+            i
+            {
+                position: relative;
+                float: right;
+                bottom: 45px;
+                right: 10px;
+                font-size: 1em;
+                color: white;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: black;
+            }
+            i:hover
+            {
+                color: aqua;                    
+                -webkit-text-stroke-width: 0px;
+                -webkit-text-stroke-color: white;
+            }
+        
     }
 }

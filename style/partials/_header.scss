@@ -1,10 +1,10 @@
 header
 {
     @include displaycenter;
+    border-bottom: 2px solid $grisfoncer;
     img
     {
         width: 50%;
-        height: auto;
         @include marge10;
     }
 }
