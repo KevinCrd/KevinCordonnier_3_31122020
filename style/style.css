@@ -1,7 +1,7 @@
 /* Bouton principale */
 .boutoncontour {
   border-radius: 45px 45px 45px 45px;
-  padding: 3% 5% 3% 5%;
+  padding: 15px 25px 15px 25px;
   border: 1px solid #FF79DA;
 }
 
@@ -9,6 +9,14 @@
   background-color: #FF79DA;
   text-decoration: none;
   color: white;
+  -webkit-filter: drop-shadow(0 0 0.25rem rgba(112, 111, 111, 0.74));
+          filter: drop-shadow(0 0 0.25rem rgba(112, 111, 111, 0.74));
+}
+
+.boutonstyle:hover {
+  background-color: #ff93e1;
+  -webkit-filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.74));
+          filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.74));
 }
 
 /* Listing */
@@ -18,10 +26,11 @@
   border: 1px solid #FF79DA;
 }
 
-body {
+.pageprincipale, .pagesecondaire {
   width: 100%;
   margin: auto;
   overflow-x: hidden;
+  font-family: 'Roboto';
 }
 
 header {
@@ -39,11 +48,29 @@ header img {
   margin: 10px 10px 10px 10px;
 }
 
-nav ol {
+header i {
+  font-size: 1.2em;
+  position: absolute;
+  left: 4%;
+  top: 2%;
+}
+
+.pagesecondaire header {
+  border-bottom: 0px;
+}
+
+.pagesecondaire .image {
+  height: 290px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pageprincipale nav ol {
   padding: 15px 15px 15px 15px;
 }
 
-nav ol h1 {
+.pageprincipale nav ol h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +81,7 @@ nav ol h1 {
   font-weight: bold;
 }
 
-nav ol li {
+.pageprincipale nav ol li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,16 +92,16 @@ nav ol li {
   background-color: rgba(239, 239, 239, 0.74);
 }
 
-nav ol li span {
+.pageprincipale nav ol li span {
   margin-left: 15%;
 }
 
-nav ol li i {
+.pageprincipale nav ol li i {
   font-size: 1em;
   margin-left: 5%;
 }
 
-.section1, .section2 {
+.pageprincipale .section1, .pageprincipale .section2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,7 +111,7 @@ nav ol li i {
           flex-direction: column;
 }
 
-.section1__geoloc, .section1__decrestaurant, .section1__decrestaurant h1, .section1__decrestaurant h2 {
+.pageprincipale .section1__geoloc, .pageprincipale .section1__decrestaurant, .pageprincipale .section1__decrestaurant h1, .pageprincipale .section1__decrestaurant h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,7 +122,7 @@ nav ol li i {
   background-color: rgba(214, 213, 213, 0.74);
 }
 
-.section1__decrestaurant {
+.pageprincipale .section1__decrestaurant {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -104,7 +131,7 @@ nav ol li i {
   background-color: rgba(239, 239, 239, 0.74);
 }
 
-.section1__decrestaurant h1 {
+.pageprincipale .section1__decrestaurant h1 {
   font-size: 1.5em;
   font-weight: bold;
   margin: 5px 5px 5px 5px;
@@ -112,7 +139,7 @@ nav ol li i {
   background-color: rgba(239, 239, 239, 0.74);
 }
 
-.section1__decrestaurant h2 {
+.pageprincipale .section1__decrestaurant h2 {
   margin: 5px 5px 5px 5px;
   font-size: 1em;
   font-weight: normal;
@@ -120,36 +147,35 @@ nav ol li i {
   background-color: rgba(239, 239, 239, 0.74);
 }
 
-.section1__decrestaurant a {
+.pageprincipale .section1__decrestaurant a {
   margin: auto;
 }
 
-.section2 {
+.pageprincipale .section2 {
   background-color: rgba(239, 239, 239, 0.74);
   padding-bottom: 45px;
 }
 
-.section2 h1 {
+.pageprincipale .section2 h1 {
   padding: 15px 15px 15px 15px;
 }
 
-.section2 article {
+.pageprincipale .section2 article {
   background-color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2px;
+  padding: 2px 2px 0px 2px;
   margin: 5px;
   border-radius: 15px 15px 15px 15px;
   -webkit-box-shadow: 4px 4px 4px #F2F2F2;
           box-shadow: 4px 4px 4px #F2F2F2;
-  width: 90%;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  width: 96%;
+  flex-direction: column;
 }
 
-.section2 article img {
+.pageprincipale .section2 article img {
   height: 200px;
   width: 100%;
   border-radius: 15px 15px 0px 0px;
@@ -157,23 +183,23 @@ nav ol li i {
      object-fit: cover;
 }
 
-.section2 article a {
+.pageprincipale .section2 article a {
   text-decoration: none;
 }
 
-.section2 article strong {
+.pageprincipale .section2 article strong {
   font-weight: bold;
   font-size: 1.2em;
 }
 
-.section2 article p {
+.pageprincipale .section2 article p {
   padding: 0 0 0 15px;
   font-size: 1em;
   font-weight: normal;
   color: black;
 }
 
-.section2 article i {
+.pageprincipale .section2 article i {
   position: relative;
   float: right;
   bottom: 45px;
@@ -184,10 +210,103 @@ nav ol li i {
   -webkit-text-stroke-color: black;
 }
 
-.section2 article i:hover {
-  color: aqua;
+.pageprincipale .section2 article i:hover {
+  -webkit-transition: all .8s linear;
+  transition: all .8s linear;
   -webkit-text-stroke-width: 0px;
   -webkit-text-stroke-color: white;
+  color: aquamarine;
+}
+
+.pagesecondaire section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(239, 239, 239, 0.74);
+}
+
+.pagesecondaire section .titrerestaurant {
+  position: absolute;
+  width: 93%;
+  top: 249px;
+  border-radius: 15px 15px 0px 0px;
+  padding: 16px 16px 15px 16px;
+  font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
+  background-color: rgba(239, 239, 239, 0.74);
+}
+
+.pagesecondaire section .titrerestaurant i {
+  position: absolute;
+  right: 8%;
+  font-size: 1em;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.pagesecondaire section .titrerestaurant i:hover {
+  -webkit-transition: all .8s linear;
+  transition: all .8s linear;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: white;
+  color: aquamarine;
+}
+
+.pagesecondaire section .titremenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+  top: 25%;
+}
+
+.pagesecondaire section article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 2px solid black;
+  margin: 10px 10px 10px 10px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.pagesecondaire section article p {
+  width: 90%;
+  font-size: 1.1em;
+  padding: 0 5px 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pagesecondaire section article .prix {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: 10%;
+}
+
+.pagesecondaire section article .iconevalidation {
+  width: 0%;
+  visibility: hidden;
+}
+
+.pagesecondaire section a {
+  position: relative;
+  left: 30%;
+  width: 20%;
+  margin: 25px 0 35px 0;
 }
 
 footer {

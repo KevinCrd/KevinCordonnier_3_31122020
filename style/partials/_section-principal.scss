@@ -1,3 +1,4 @@
+.pageprincipale {
 .section1
 {
     display: flex;
@@ -52,7 +53,7 @@
     {
         
         @include imagepageprincipal;
-        flex-direction: row;
+        flex-direction: column;
        
         img
         {
@@ -79,17 +80,82 @@
                 float: right;
                 bottom: 45px;
                 right: 10px;
-                font-size: 1em;
-                color: white;
-                -webkit-text-stroke-width: 1px;
-                -webkit-text-stroke-color: black;
+                @include coeurdepart;
+            &:hover
+            {               
+                @include coeurrempli;
             }
-            i:hover
-            {
-                color: aqua;                    
-                -webkit-text-stroke-width: 0px;
-                -webkit-text-stroke-color: white;
             }
         
     }
+}
+}
+.pagesecondaire
+{
+    section{
+        @include displaycenter;
+        flex-direction: column;
+        background-color: $grisclair2;
+
+        .titrerestaurant{
+            position: absolute;
+            width: 93%;
+            top: 249px;
+            border-radius: 15px 15px 0px 0px;
+            padding: 16px 16px 15px 16px;
+            font-size: 2em;
+            font-weight: bold;
+            font-style: italic;
+            background-color: $grisclair2;
+            i
+            {
+                position: absolute;
+                right: 8%;
+                @include coeurdepart;
+                &:hover{
+                    @include coeurrempli;
+                }
+            }
+        }
+        .titremenu
+        {
+            display: flex;
+            margin-top: 15px;
+            top: 25%;
+
+        }
+        article{
+            display: flex;
+            flex-direction: row;
+            border: 2px solid black;
+            margin: 10px 10px 10px 10px;
+            border-radius: 15px 15px 15px 15px;
+            p
+            {
+                width: 90%;
+                font-size: 1.1em;
+                padding: 0 5px 0 5px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .prix
+            {
+                justify-self: end;
+                width: 10%;
+            }
+            .iconevalidation
+            {
+                width: 0%;
+                visibility: hidden;
+            }
+        }
+        a
+        {   
+            position: relative;
+            left: 30%;
+            width: 20%;
+            margin: 25px 0 35px 0;
+        }
+}
 }

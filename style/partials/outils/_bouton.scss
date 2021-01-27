@@ -3,7 +3,7 @@
 .boutoncontour
 {
     border-radius: 45px 45px 45px 45px;
-    padding: 3% 5% 3% 5%;
+    padding: 15px 25px 15px 25px;
     border: 1px solid $couleur-2;
 }
 .boutonstyle
@@ -11,6 +11,12 @@
     background-color: $couleur-2;
     text-decoration: none;
     color: $white;
+    filter: drop-shadow(0 0 0.25rem $grisfoncer);
+    &:hover
+    {
+        background-color: lighten($couleur-2, 5%);
+        filter: drop-shadow(0 0 0.25rem darken($grisfoncer, 45%));
+    }
 }
 
 /* Listing */
@@ -20,8 +26,4 @@
     border-radius: 25px 25px 25px 25px;
     padding: 5% 5% 5% 5%;
     border: 1px solid $couleur-2;
-}
-.listestyle
-{
-    
 }

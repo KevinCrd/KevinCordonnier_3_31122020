@@ -7,4 +7,25 @@ header
         width: 50%;
         @include marge10;
     }
+    i
+    {
+        font-size: 1.2em;
+        position: absolute;
+        left: 4%;
+        top: 2%;
+    }
+}
+.pagesecondaire {
+
+header
+{
+    border-bottom: 0px;
+}
+
+.image
+{
+    height: 290px;
+    width: 100%;
+    object-fit: cover;
+}
 }
