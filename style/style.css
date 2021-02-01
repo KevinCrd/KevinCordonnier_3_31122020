@@ -63,10 +63,10 @@ header img {
 }
 
 header i {
-  font-size: 1.2em;
+  font-size: 1.1em;
   position: absolute;
   left: 4%;
-  top: 1%;
+  top: 2%;
   color: black;
 }
 
@@ -294,28 +294,137 @@ header i {
   border: 2px solid black;
   margin: 10px 10px 10px 10px;
   border-radius: 15px 15px 15px 15px;
+  -webkit-transition: all linear 1s;
+  transition: all linear 1s;
+  overflow: hidden;
 }
 
 .pagesecondaire section article .titreplat {
   width: 90%;
   font-size: 1.1em;
-  padding: 0 5px 0 5px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .pagesecondaire section article .prix {
-  -ms-grid-column-align: center;
-      justify-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
   width: 10%;
 }
 
 .pagesecondaire section article .iconevalidation {
-  -ms-grid-column-align: end;
-      justify-self: end;
+  margin: 0 0 0 0;
+  border-radius: 0px 12px 12px 0px;
+  padding: 15px 0px 8px 0px;
+  font-size: 2.5em;
+  color: white;
+  background-color: green;
   width: 0%;
   visibility: hidden;
+}
+
+.pagesecondaire section article:hover .titreplat {
+  -webkit-animation: titreplay 2s;
+          animation: titreplay 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes titreplay {
+  from {
+    width: 90%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes titreplay {
+  from {
+    width: 90%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+.pagesecondaire section article:hover .prix {
+  -webkit-animation: prix 2s;
+          animation: prix 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes prix {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 17%;
+  }
+}
+
+@keyframes prix {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 17%;
+  }
+}
+
+.pagesecondaire section article:hover .iconevalidation {
+  -webkit-animation: iconevalidation 2s;
+          animation: iconevalidation 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  visibility: visible;
+}
+
+@-webkit-keyframes iconevalidation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 13%;
+  }
+}
+
+@keyframes iconevalidation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 13%;
+  }
+}
+
+.pagesecondaire section article:hover .iconevalidation i {
+  -webkit-animation: iconevalidationrotation 2s;
+          animation: iconevalidationrotation 2s;
+}
+
+@-webkit-keyframes iconevalidationrotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+
+@keyframes iconevalidationrotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
 }
 
 footer {

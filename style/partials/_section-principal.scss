@@ -128,25 +128,82 @@
             border: 2px solid black;
             margin: 10px 10px 10px 10px;
             border-radius: 15px 15px 15px 15px;
+            transition: all linear 1s;
+            overflow: hidden;
             .titreplat
             {
                 width: 90%;
                 font-size: 1.1em;
-                padding: 0 5px 0 5px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
             .prix
             {
-                justify-self:center;
+                justify-self:end;
                 width: 10%;
             }
             .iconevalidation
             {
-                justify-self: end;
+                margin: 0 0 0 0;
+                border-radius: 0px 12px 12px 0px;
+                padding: 15px 0px 8px 0px;
+                font-size: 2.5em;
+                color: white;
+                background-color: green;
                 width: 0%;
                 visibility: hidden;
+            }
+            &:hover{
+                .titreplat{
+                    @keyframes titreplay{
+                    from{
+                        width: 90%;
+                    }
+                    to{
+                         width: 70%;
+                    }
+                }
+                    animation: titreplay 2s;
+                    animation-fill-mode: forwards; 
+                }
+                .prix{
+                    @keyframes prix{
+                        from{
+                            width: 10%;
+                        }
+                        to{
+                            width: 17%;
+                        }
+                    }
+                    animation: prix 2s;
+                    animation-fill-mode: forwards; 
+                }
+                .iconevalidation{
+                    @keyframes iconevalidation {
+                        from { 
+                            width: 0%;
+                            
+                        }
+                        to{
+                            width: 13%;
+                        }
+                    }
+                    animation: iconevalidation 2s;
+                    animation-fill-mode: forwards; 
+                    visibility: visible;
+                    i{
+                        @keyframes iconevalidationrotation{
+                            from {
+                                transform: rotate(0deg)
+                            }
+                            to {
+                                transform: rotate(720deg)
+                            }
+                        }
+                        animation: iconevalidationrotation 2s;
+                    }
+                }
             }
             
         }
