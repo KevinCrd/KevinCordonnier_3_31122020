@@ -1,7 +1,14 @@
 /* Bouton principale */
 .boutoncontour {
-  border-radius: 45px 45px 45px 45px;
-  padding: 15px 25px 15px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 35px;
+  padding: 15px;
+  margin: 15px auto 15px auto;
   border: 1px solid #FF79DA;
 }
 
@@ -27,10 +34,17 @@
 }
 
 .pageprincipale, .pagesecondaire {
+  font-family: 'Roboto';
+}
+
+.titrerestaurant {
+  font-family: 'Shrikhand';
+}
+
+.pageprincipale, .pagesecondaire {
   width: 100%;
   margin: auto;
   overflow-x: hidden;
-  font-family: 'Roboto';
 }
 
 header {
@@ -52,7 +66,8 @@ header i {
   font-size: 1.2em;
   position: absolute;
   left: 4%;
-  top: 2%;
+  top: 1%;
+  color: black;
 }
 
 .pagesecondaire header {
@@ -147,10 +162,6 @@ header i {
   background-color: rgba(239, 239, 239, 0.74);
 }
 
-.pageprincipale .section1__decrestaurant a {
-  margin: auto;
-}
-
 .pageprincipale .section2 {
   background-color: rgba(239, 239, 239, 0.74);
   padding-bottom: 45px;
@@ -229,7 +240,6 @@ header i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(239, 239, 239, 0.74);
 }
 
 .pagesecondaire section .titrerestaurant {
@@ -241,7 +251,8 @@ header i {
   font-size: 2em;
   font-weight: bold;
   font-style: italic;
-  background-color: rgba(239, 239, 239, 0.74);
+  background-color: white;
+  opacity: 1;
 }
 
 .pagesecondaire section .titrerestaurant i {
@@ -265,8 +276,11 @@ header i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 15px;
-  top: 25%;
+  padding: 0px 0px 0px 15px;
+}
+
+.pagesecondaire section .titremenu p {
+  border-bottom: 2px solid green;
 }
 
 .pagesecondaire section article {
@@ -282,7 +296,7 @@ header i {
   border-radius: 15px 15px 15px 15px;
 }
 
-.pagesecondaire section article p {
+.pagesecondaire section article .titreplat {
   width: 90%;
   font-size: 1.1em;
   padding: 0 5px 0 5px;
@@ -292,21 +306,16 @@ header i {
 }
 
 .pagesecondaire section article .prix {
-  -ms-grid-column-align: end;
-      justify-self: end;
+  -ms-grid-column-align: center;
+      justify-self: center;
   width: 10%;
 }
 
 .pagesecondaire section article .iconevalidation {
+  -ms-grid-column-align: end;
+      justify-self: end;
   width: 0%;
   visibility: hidden;
-}
-
-.pagesecondaire section a {
-  position: relative;
-  left: 30%;
-  width: 20%;
-  margin: 25px 0 35px 0;
 }
 
 footer {

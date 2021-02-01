@@ -33,10 +33,6 @@
             text-align: center;
             background-color: $grisclair2;
         }
-        a
-        {
-            margin: auto;
-        }
     }
 
 }
@@ -90,12 +86,11 @@
     }
 }
 }
-.pagesecondaire
-{
+.pagesecondaire {
+
     section{
         @include displaycenter;
         flex-direction: column;
-        background-color: $grisclair2;
 
         .titrerestaurant{
             position: absolute;
@@ -106,7 +101,8 @@
             font-size: 2em;
             font-weight: bold;
             font-style: italic;
-            background-color: $grisclair2;
+            background-color: white;
+            opacity: 1;
             i
             {
                 position: absolute;
@@ -114,15 +110,17 @@
                 @include coeurdepart;
                 &:hover{
                     @include coeurrempli;
-                }
+                       }
             }
+            
         }
         .titremenu
         {
             display: flex;
-            margin-top: 15px;
-            top: 25%;
-
+            padding: 0px 0px 0px 15px;
+            p{
+                border-bottom: 2px solid green;
+            }
         }
         article{
             display: flex;
@@ -130,7 +128,7 @@
             border: 2px solid black;
             margin: 10px 10px 10px 10px;
             border-radius: 15px 15px 15px 15px;
-            p
+            .titreplat
             {
                 width: 90%;
                 font-size: 1.1em;
@@ -141,21 +139,17 @@
             }
             .prix
             {
-                justify-self: end;
+                justify-self:center;
                 width: 10%;
             }
             .iconevalidation
             {
+                justify-self: end;
                 width: 0%;
                 visibility: hidden;
             }
+            
         }
-        a
-        {   
-            position: relative;
-            left: 30%;
-            width: 20%;
-            margin: 25px 0 35px 0;
-        }
+        
 }
 }
