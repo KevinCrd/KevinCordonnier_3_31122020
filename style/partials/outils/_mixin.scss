@@ -42,7 +42,7 @@
 }
 @mixin coeurdepart{
     font-size: 1em;
-    color: white;
+    color: $couleurfondpagesecondaire;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
@@ -50,5 +50,5 @@
     transition: all .8s linear;
     -webkit-text-stroke-width: 0px;
     -webkit-text-stroke-color: white;
-    color: aquamarine;
+    color: $couleur-1;
 }

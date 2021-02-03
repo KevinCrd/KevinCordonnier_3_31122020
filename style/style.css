@@ -12,6 +12,14 @@
   border: 1px solid #FF79DA;
 }
 
+.boutontailleprincipale {
+  max-width: 60%;
+}
+
+.boutoutaillesecondaire {
+  max-width: 40%;
+}
+
 .boutonstyle {
   background-color: #FF79DA;
   text-decoration: none;
@@ -31,6 +39,282 @@
   border-radius: 25px 25px 25px 25px;
   padding: 5% 5% 5% 5%;
   border: 1px solid #FF79DA;
+}
+
+/* animation icone validation page restaurant */
+.pagesecondaire section article:hover .titreplat {
+  -webkit-animation: titreplay 2s;
+          animation: titreplay 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.pagesecondaire section article:hover .prix {
+  -webkit-animation: prix 2s;
+          animation: prix 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.pagesecondaire section article:hover .iconevalidation {
+  -webkit-animation: iconevalidation 2s;
+          animation: iconevalidation 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  visibility: visible;
+}
+
+.pagesecondaire section article:hover .iconevalidation i {
+  -webkit-animation: iconevalidationrotation 2s;
+          animation: iconevalidationrotation 2s;
+}
+
+/* Apparation du menu page secondaire */
+.pagesecondaire section .anim1, .pagesecondaire section .anim1 .petitanim1, .pagesecondaire section .anim1 .petitanim2, .pagesecondaire section .anim1 .petitanim3, .pagesecondaire section .anim1 .petitanim3_2, .pagesecondaire section .anim2, .pagesecondaire section .anim2 .petitanim4, .pagesecondaire section .anim2 .petitanim5, .pagesecondaire section .anim2 .petitanim6, .pagesecondaire section .anim3, .pagesecondaire section .anim3 .petitanim7, .pagesecondaire section .anim3 .petitanim8, .pagesecondaire section .anim3 .petitanim9, .pagesecondaire section .anim4, .pagesecondaire section .anim2, .pagesecondaire section .anim3, .pagesecondaire section .anim4, .pagesecondaire section .petitanim1, .pagesecondaire section .petitanim2, .pagesecondaire section .petitanim3, .pagesecondaire section .petitanim4, .pagesecondaire section .petitanim5, .pagesecondaire section .petitanim6, .pagesecondaire section .petitanim7, .pagesecondaire section .petitanim8, .pagesecondaire section .petitanim9 {
+  opacity: 0;
+}
+
+.pagesecondaire section .anim1, .pagesecondaire section .anim1 .petitanim1, .pagesecondaire section .anim1 .petitanim2, .pagesecondaire section .anim1 .petitanim3, .pagesecondaire section .anim1 .petitanim3_2, .pagesecondaire section .anim2, .pagesecondaire section .anim2 .petitanim4, .pagesecondaire section .anim2 .petitanim5, .pagesecondaire section .anim2 .petitanim6, .pagesecondaire section .anim3, .pagesecondaire section .anim3 .petitanim7, .pagesecondaire section .anim3 .petitanim8, .pagesecondaire section .anim3 .petitanim9, .pagesecondaire section .anim4 {
+  -webkit-animation: apparitionfondu 2s;
+          animation: apparitionfondu 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.pagesecondaire section .anim1 .petitanim1, .pagesecondaire section .anim2 .petitanim1, .pagesecondaire section .anim3 .petitanim1, .pagesecondaire section .anim4 .petitanim1 {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.pagesecondaire section .anim1 .petitanim2, .pagesecondaire section .anim2 .petitanim2, .pagesecondaire section .anim3 .petitanim2, .pagesecondaire section .anim4 .petitanim2 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.pagesecondaire section .anim1 .petitanim3, .pagesecondaire section .anim2 .petitanim3, .pagesecondaire section .anim3 .petitanim3, .pagesecondaire section .anim4 .petitanim3 {
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+
+.pagesecondaire section .anim1 .petitanim3_2, .pagesecondaire section .anim2 .petitanim3_2, .pagesecondaire section .anim3 .petitanim3_2, .pagesecondaire section .anim4 .petitanim3_2 {
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+}
+
+.pagesecondaire section .anim2 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.pagesecondaire section .anim2 .petitanim4 {
+  -webkit-animation-delay: 3500ms;
+          animation-delay: 3500ms;
+}
+
+.pagesecondaire section .anim2 .petitanim5 {
+  -webkit-animation-delay: 4000ms;
+          animation-delay: 4000ms;
+}
+
+.pagesecondaire section .anim2 .petitanim6 {
+  -webkit-animation-delay: 4500ms;
+          animation-delay: 4500ms;
+}
+
+.pagesecondaire section .anim3 {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.pagesecondaire section .anim3 .petitanim7 {
+  -webkit-animation-delay: 6500ms;
+          animation-delay: 6500ms;
+}
+
+.pagesecondaire section .anim3 .petitanim8 {
+  -webkit-animation-delay: 7000ms;
+          animation-delay: 7000ms;
+}
+
+.pagesecondaire section .anim3 .petitanim9 {
+  -webkit-animation-delay: 7500ms;
+          animation-delay: 7500ms;
+}
+
+.pagesecondaire section .anim4 {
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+
+/* Animation Loadspinner */
+.pageprincipale header, .pageprincipale section, .pageprincipale nav, .pageprincipale footer {
+  opacity: 0;
+}
+
+.pageprincipale .loader {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.pageprincipale .loader i {
+  font-size: 5em;
+  position: absolute;
+  right: 50%;
+  -webkit-animation: loader 4500ms;
+          animation: loader 4500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.pageprincipale header {
+  -webkit-animation: apparitionfondu 2s;
+          animation: apparitionfondu 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.pageprincipale nav {
+  -webkit-animation: apparitionfondu 2s;
+          animation: apparitionfondu 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+
+.pageprincipale section {
+  -webkit-animation: apparitionfondu 2s;
+          animation: apparitionfondu 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+
+.pageprincipale footer {
+  -webkit-animation: apparitionfondu 2s;
+          animation: apparitionfondu 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes loader {
+  from {
+    top: 0%;
+  }
+  to {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes loader {
+  from {
+    top: 0%;
+  }
+  to {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes apparitionfondu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes apparitionfondu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes iconevalidationrotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+
+@keyframes iconevalidationrotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+
+@-webkit-keyframes iconevalidation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 13%;
+  }
+}
+
+@keyframes iconevalidation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 13%;
+  }
+}
+
+@-webkit-keyframes prix {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 15%;
+  }
+}
+
+@keyframes prix {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 15%;
+  }
+}
+
+@-webkit-keyframes titreplay {
+  from {
+    width: 90%;
+  }
+  to {
+    width: 73%;
+  }
+}
+
+@keyframes titreplay {
+  from {
+    width: 90%;
+  }
+  to {
+    width: 73%;
+  }
 }
 
 .pageprincipale, .pagesecondaire {
@@ -74,11 +358,46 @@ header i {
   border-bottom: 0px;
 }
 
-.pagesecondaire .image {
+.pagesecondaire figure {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 0;
+}
+
+.pagesecondaire figure img {
   height: 290px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.pagesecondaire figure figcaption {
+  position: absolute;
+  width: 92%;
+  top: 78%;
+  border-radius: 15px 15px 0px 0px;
+  padding: 16px 16px 15px 16px;
+  font-size: 2em;
+  font-weight: 1000;
+  font-style: italic;
+  background-color: whitesmoke;
+}
+
+.pagesecondaire figure figcaption i {
+  position: absolute;
+  right: 8%;
+  font-size: 1em;
+  color: whitesmoke;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.pagesecondaire figure figcaption i:hover {
+  -webkit-transition: all .8s linear;
+  transition: all .8s linear;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: white;
+  color: #9356DC;
 }
 
 .pageprincipale nav ol {
@@ -216,7 +535,7 @@ header i {
   bottom: 45px;
   right: 10px;
   font-size: 1em;
-  color: white;
+  color: whitesmoke;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
@@ -226,7 +545,7 @@ header i {
   transition: all .8s linear;
   -webkit-text-stroke-width: 0px;
   -webkit-text-stroke-color: white;
-  color: aquamarine;
+  color: #9356DC;
 }
 
 .pagesecondaire section {
@@ -240,36 +559,7 @@ header i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.pagesecondaire section .titrerestaurant {
-  position: absolute;
-  width: 93%;
-  top: 249px;
-  border-radius: 15px 15px 0px 0px;
-  padding: 16px 16px 15px 16px;
-  font-size: 2em;
-  font-weight: bold;
-  font-style: italic;
-  background-color: white;
-  opacity: 1;
-}
-
-.pagesecondaire section .titrerestaurant i {
-  position: absolute;
-  right: 8%;
-  font-size: 1em;
-  color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-}
-
-.pagesecondaire section .titrerestaurant i:hover {
-  -webkit-transition: all .8s linear;
-  transition: all .8s linear;
-  -webkit-text-stroke-width: 0px;
-  -webkit-text-stroke-color: white;
-  color: aquamarine;
+  background-color: whitesmoke;
 }
 
 .pagesecondaire section .titremenu {
@@ -280,7 +570,7 @@ header i {
 }
 
 .pagesecondaire section .titremenu p {
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid #1ec41e;
 }
 
 .pagesecondaire section article {
@@ -291,7 +581,9 @@ header i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: 2px solid black;
+  background-color: white;
+  -webkit-filter: drop-shadow(0 0 0.25rem rgba(112, 111, 111, 0.74));
+          filter: drop-shadow(0 0 0.25rem rgba(112, 111, 111, 0.74));
   margin: 10px 10px 10px 10px;
   border-radius: 15px 15px 15px 15px;
   -webkit-transition: all linear 1s;
@@ -302,6 +594,7 @@ header i {
 .pagesecondaire section article .titreplat {
   width: 90%;
   font-size: 1.1em;
+  padding-left: 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -311,120 +604,24 @@ header i {
   -ms-grid-column-align: end;
       justify-self: end;
   width: 10%;
+  font-weight: bold;
 }
 
 .pagesecondaire section article .iconevalidation {
   margin: 0 0 0 0;
   border-radius: 0px 12px 12px 0px;
   padding: 15px 0px 8px 0px;
+  -ms-grid-column-align: center;
+      justify-self: center;
   font-size: 2.5em;
   color: white;
-  background-color: green;
+  background-color: #99E2D0;
   width: 0%;
   visibility: hidden;
 }
 
-.pagesecondaire section article:hover .titreplat {
-  -webkit-animation: titreplay 2s;
-          animation: titreplay 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes titreplay {
-  from {
-    width: 90%;
-  }
-  to {
-    width: 70%;
-  }
-}
-
-@keyframes titreplay {
-  from {
-    width: 90%;
-  }
-  to {
-    width: 70%;
-  }
-}
-
-.pagesecondaire section article:hover .prix {
-  -webkit-animation: prix 2s;
-          animation: prix 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes prix {
-  from {
-    width: 10%;
-  }
-  to {
-    width: 17%;
-  }
-}
-
-@keyframes prix {
-  from {
-    width: 10%;
-  }
-  to {
-    width: 17%;
-  }
-}
-
-.pagesecondaire section article:hover .iconevalidation {
-  -webkit-animation: iconevalidation 2s;
-          animation: iconevalidation 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  visibility: visible;
-}
-
-@-webkit-keyframes iconevalidation {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 13%;
-  }
-}
-
-@keyframes iconevalidation {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 13%;
-  }
-}
-
-.pagesecondaire section article:hover .iconevalidation i {
-  -webkit-animation: iconevalidationrotation 2s;
-          animation: iconevalidationrotation 2s;
-}
-
-@-webkit-keyframes iconevalidationrotation {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(720deg);
-            transform: rotate(720deg);
-  }
-}
-
-@keyframes iconevalidationrotation {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(720deg);
-            transform: rotate(720deg);
-  }
+.pagesecondaire section article .iconevalidation i {
+  padding-left: 3px;
 }
 
 footer {
