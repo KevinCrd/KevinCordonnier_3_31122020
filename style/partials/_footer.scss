@@ -9,10 +9,11 @@ footer
         list-style-type: none;
         margin-bottom: 3px;
     }
-    h1
+    strong
     {
         @include textegras;
         font-style:italic;
+        padding-left: 10%;
     }
     a
     {

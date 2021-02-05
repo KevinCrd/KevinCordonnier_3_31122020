@@ -33,6 +33,10 @@
 .listecontour
 {
     border-radius: 25px 25px 25px 25px;
-    padding: 5% 5% 5% 5%;
-    border: 1px solid $couleur-2;
+    padding: 3% 5% 3% 5%;
+}
+.listecouleur
+{
+    border: 1px solid $white;
+    filter: drop-shadow(0 0 0.25rem $grisfoncer);
 }

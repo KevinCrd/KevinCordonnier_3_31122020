@@ -9,6 +9,10 @@
         @include displaycenter;
         padding: 10px 0 10px 0;
         background-color:$grisclair;
+        span
+        {
+            padding-left: 15px;
+        }
     }
     &__decrestaurant
     {
@@ -49,7 +53,6 @@
     {
         
         @include imagepageprincipal;
-        flex-direction: column;
        
         img
         {
@@ -63,6 +66,16 @@
         {
             font-weight: bold;
             font-size: 1.2em;
+        }
+        .nouveaurestaurant
+        {
+            background-color: $couleur-3;
+            position: relative;
+            left: 75%;
+            bottom: 260px;
+            padding: 5px 10px 5px 10px;
+            font-size: 0.8em;
+            color: (darken($color: $couleur-3, $amount: 50))
         }
         p
         {

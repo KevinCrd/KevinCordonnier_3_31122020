@@ -37,8 +37,13 @@
 /* Listing */
 .listecontour {
   border-radius: 25px 25px 25px 25px;
-  padding: 5% 5% 5% 5%;
-  border: 1px solid #FF79DA;
+  padding: 3% 5% 3% 5%;
+}
+
+.listecouleur {
+  border: 1px solid white;
+  -webkit-filter: drop-shadow(0 0 0.25rem rgba(112, 111, 111, 0.74));
+          filter: drop-shadow(0 0 0.25rem rgba(112, 111, 111, 0.74));
 }
 
 /* animation icone validation page restaurant */
@@ -160,7 +165,7 @@
 .pageprincipale .loader i {
   font-size: 5em;
   position: absolute;
-  right: 50%;
+  right: 60%;
   -webkit-animation: loader 4500ms;
           animation: loader 4500ms;
   -webkit-animation-fill-mode: forwards;
@@ -317,6 +322,84 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Tablette */
+}
+
+@media (min-width: 1281px) {
+  /* PC */
+  .pageprincipale header {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pageprincipale header img {
+    width: 20%;
+  }
+  .pageprincipale .section1, .pageprincipale .section2 {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pageprincipale .section2 {
+    width: 98%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .pageprincipale .section2 article {
+    max-width: 20%;
+  }
+  .pageprincipale nav ol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .pageprincipale nav ol li {
+    width: 30%;
+  }
+  .pageprincipale footer strong {
+    padding-left: 2%;
+  }
+  .pagesecondaire header {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pagesecondaire header img {
+    width: 20%;
+  }
+  .pagesecondaire figure figcaption {
+    width: 100%;
+  }
+  .pagesecondaire section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .pagesecondaire section article {
+    width: 30%;
+  }
+  .pagesecondaire footer strong {
+    padding-left: 2%;
+  }
+}
+
 .pageprincipale, .pagesecondaire {
   font-family: 'Roboto';
 }
@@ -400,11 +483,7 @@ header i {
   color: #9356DC;
 }
 
-.pageprincipale nav ol {
-  padding: 15px 15px 15px 15px;
-}
-
-.pageprincipale nav ol h1 {
+.pageprincipale nav strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,6 +492,12 @@ header i {
           justify-content: left;
   font-size: 1.5em;
   font-weight: bold;
+  padding: 8% 0 0 25px;
+}
+
+.pageprincipale nav ol {
+  padding: 15px 15px 15px 15px;
+  background-color: white;
 }
 
 .pageprincipale nav ol li {
@@ -423,16 +508,58 @@ header i {
       -ms-flex-pack: left;
           justify-content: left;
   margin: 10px 10px 10px 10px;
-  background-color: rgba(239, 239, 239, 0.74);
+  background-color: white;
 }
 
-.pageprincipale nav ol li span {
-  margin-left: 15%;
+.pageprincipale nav ol li .navigationliste {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
 }
 
-.pageprincipale nav ol li i {
+.pageprincipale nav ol li .navigationliste p {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: flex-end;
+  width: 70%;
   font-size: 1em;
-  margin-left: 5%;
+  padding-left: 15px;
+  padding-bottom: 1%;
+  font-weight: bold;
+}
+
+.pageprincipale nav ol li .navigationliste i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  font-size: 1em;
+  width: 15%;
+  padding-top: 6%;
+}
+
+.pageprincipale nav ol li .navigationliste span {
+  position: relative;
+  top: 28%;
+  right: 10%;
+  height: 35%;
+  padding: 5px 8px 5px 8px;
+  color: white;
+  background-color: #9356DC;
+  border-radius: 50%;
 }
 
 .pageprincipale .section1, .pageprincipale .section2 {
@@ -454,6 +581,10 @@ header i {
           justify-content: center;
   padding: 10px 0 10px 0;
   background-color: rgba(214, 213, 213, 0.74);
+}
+
+.pageprincipale .section1__geoloc span, .pageprincipale .section1__decrestaurant span {
+  padding-left: 15px;
 }
 
 .pageprincipale .section1__decrestaurant {
@@ -502,7 +633,6 @@ header i {
   -webkit-box-shadow: 4px 4px 4px #F2F2F2;
           box-shadow: 4px 4px 4px #F2F2F2;
   width: 96%;
-  flex-direction: column;
 }
 
 .pageprincipale .section2 article img {
@@ -520,6 +650,16 @@ header i {
 .pageprincipale .section2 article strong {
   font-weight: bold;
   font-size: 1.2em;
+}
+
+.pageprincipale .section2 article .nouveaurestaurant {
+  background-color: #99E2D0;
+  position: relative;
+  left: 75%;
+  bottom: 260px;
+  padding: 5px 10px 5px 10px;
+  font-size: 0.8em;
+  color: #1b6150;
 }
 
 .pageprincipale .section2 article p {
@@ -636,10 +776,11 @@ footer ul li {
   margin-bottom: 3px;
 }
 
-footer h1 {
+footer strong {
   font-size: 1.5em;
   font-weight: bold;
   font-style: italic;
+  padding-left: 10%;
 }
 
 footer a {

@@ -1,27 +1,61 @@
 .pageprincipale{
-nav ol
-{
-    @include padding15;
-    h1
-    {
-        @include displayleft;
-        @include textegras;
-    }
-    li
-    {
-        @include displayleft;
-        @include marge10;
-        background-color: $grisclair2;
-        
-        span
+nav {
+
+strong
         {
-            margin-left: 15%;
+            @include displayleft;
+            @include textegras;
+            padding: 8% 0 0 25px;
         }
-        i
+
+        ol
         {
-            font-size: 1em;
-            margin-left: 5%;
-        }
-    }
+            @include padding15;
+            background-color: $white;
+            
+            li
+            {
+                @include displayleft;
+                @include marge10;
+                background-color: $white;
+                .navigationliste{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    width: 100%;
+               
+                   p
+                    {
+                        order: 2;
+                        display: flex;
+                        justify-self: flex-end;
+                        width: 70%;
+                        font-size: 1em;
+                        padding-left: 15px;
+                        padding-bottom: 1%;
+                        font-weight: bold;
+                    }
+                    i
+                    {
+                        display: flex;
+                        order: 1;
+                        font-size: 1em;
+                        width: 15%;
+                        padding-top: 6%;
+                    }
+                    span
+                    {
+                        position: relative;
+                        top: 28%;
+                        right:10%;
+                        height: 35%;
+                        padding: 5px 8px 5px 8px;
+                        color: $white;
+                        background-color: $couleur-1;
+                        border-radius: 50%;
+                    } 
+                }
+            }
 }
+}    
 }
