@@ -342,18 +342,35 @@
   }
   .pageprincipale nav ol li .navigationliste i {
     position: relative;
-    top: 27px;
+    top: 22px;
   }
   .pageprincipale nav ol li .navigationliste span {
     position: relative;
-    bottom: 15px;
-    padding: 0px 0px 0px 0px;
-    height: 10%;
+    bottom: 12px;
+    padding: 10px 0 5px 0;
+    max-height: 20px;
   }
   .pageprincipale nav ol li .navigationliste p {
     position: relative;
     bottom: 25px;
     left: 80px;
+  }
+  .pageprincipale .section2 article .nouveaurestaurant {
+    position: relative;
+    left: 90%;
+  }
+  .pagesecondaire section .anim1, .pagesecondaire section .anim1 .petitanim1, .pagesecondaire section .anim1 .petitanim2, .pagesecondaire section .anim1 .petitanim3, .pagesecondaire section .anim1 .petitanim3_2, .pagesecondaire section .anim2, .pagesecondaire section .anim2 .petitanim4, .pagesecondaire section .anim2 .petitanim5, .pagesecondaire section .anim2 .petitanim6, .pagesecondaire section .anim3, .pagesecondaire section .anim3 .petitanim7, .pagesecondaire section .anim3 .petitanim8, .pagesecondaire section .anim3 .petitanim9, .pagesecondaire section .anim4, .pagesecondaire section .anim2, .pagesecondaire section .anim3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .pagesecondaire section .petitanim1, .pagesecondaire section .petitanim2, .pagesecondaire section .petitanim3, .pagesecondaire section .petitanim4, .pagesecondaire section .petitanim5, .pagesecondaire section .petitanim6, .pagesecondaire section .petitanim7, .pagesecondaire section .petitanim8, .pagesecondaire section .petitanim9 {
+    max-width: 400px;
+    width: 300px;
   }
   .pagesecondaire header {
     width: 85%;
@@ -370,7 +387,7 @@
   }
   .pagesecondaire figure img {
     height: 290px;
-    width: 80%;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
